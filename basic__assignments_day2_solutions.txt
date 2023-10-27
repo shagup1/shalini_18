@@ -1,0 +1,259 @@
+1)
+/*class hello{
+	private int width;
+	private int height;
+	public int getWidth() {
+		return width;
+	}
+	public void setWidth(int width) {
+		this.width = width;
+	}
+	public int getHeight() {
+		return height;
+	}
+	public void setHeight(int height) {
+		this.height = height;
+	}
+	
+	
+}
+
+public class Shape
+{
+	public static void main(String args[])
+	{
+		hello s1=new hello();  // will invoke "default constructor" provided by compiler
+		s1.setHeight(200);
+		System.out.println(s1.getHeight());
+		s1.setWidth(400);
+		System.out.println(s1.getWidth());
+	}
+}*/
+
+2)
+/*
+
+class myclass
+{
+	private int a, b;
+
+	public myclass() {
+		System.out.println("inside default constructor");
+
+	}
+
+	public myclass(int a) {
+		System.out.println("inside parameterised constructor");
+		this.a = a;
+	}
+
+	public myclass(int a, int b) {
+		System.out.println(" constructor with two arguments");
+		this.a = a;
+		this.b = b;
+		
+	}
+	
+	
+}
+
+public class Shape{
+	
+
+	public static void main(String args[]) {
+		myclass m1=new myclass();
+		
+		myclass m2=new myclass(200);
+		
+		
+		myclass m3=new myclass(500,400);
+		
+		
+	}
+	
+}
+*/
+
+3)
+/*
+class emp
+{
+	private static int cnt=10;
+	public static int getCnt() {
+		return cnt;
+	}
+}
+
+public class Shape{
+	
+
+	public static void main(String args[]) {
+		System.out.println(emp.getCnt());
+	
+	}
+	
+}
+*/
+
+4)
+
+public class task_4 {
+	public static void main(String args[]) 
+	{
+		DemoOb obj1=new DemoOb();
+		DemoOb obj2=obj1;	
+		obj2=new DemoOb();
+	}
+
+}
+class DemoOb
+{
+	DemoOb()
+	{
+		System.out.println("inside Default constructor");
+	}
+}
+
+
+
+
+
+
+
+
+5) 
+public class Demo{
+	public static void main(String []args) 
+	{
+		System.out.println(A.getA());
+		System.out.println(B.getB());
+		System.out.println(C.getC());
+		A s1=new A();
+		B s2=new B();
+		C s3=new C();
+		System.out.println(s1.getAa());
+		System.out.println(s2.getBb());
+		System.out.println(s3.getCc());
+	}
+
+}
+class A
+{
+	private static int a=10;
+	private int aa;
+	public static int getA() 
+	{
+		return a;
+	}
+	public int getAa() 
+	{
+		return aa;
+	}
+}
+class B
+{
+	private static int b=20;
+	private int bb;
+	public static int getB() 
+	{
+		return b;
+	}
+	public int getBb() {
+		return bb;
+	}
+}
+class C
+{
+	private static int c=30;
+	private int cc;
+	public static int getC() 
+	{
+		return c;
+	}
+	public int getCc() 
+	{
+		return cc;
+	}
+}
+
+
+6)
+
+
+
+public class Demo{
+	public static void main(String []args) 
+	{
+		System.out.println(A.getA());
+		System.out.println(B.getB());
+		System.out.println(C.getC());
+		A s1=new A();
+		B s2=new B();
+		C s3=new C();
+		System.out.println(s1.getAa());
+		System.out.println(s2.getBb());
+		System.out.println(s3.getCc());
+	}
+
+}
+class A
+{
+	private static int a=10;
+	private int aa;
+	public static int getA() 
+	{
+		return a;
+	}
+	public int getAa() 
+	{
+		return aa;
+	}
+	static
+	{
+		System.out.println("inside Static Initialser of A");
+	}
+}
+class B
+{
+	private static int b=20;
+	private int bb;
+	public static int getB() 
+	{
+		return b;
+	}
+	public int getBb() {
+		return bb;
+	}
+	static
+	{
+		System.out.println("inside Static Initialser of B");
+	}
+}
+class C
+{
+	private static int c=30;
+	private int cc;
+	public static int getC() 
+	{
+		return c;
+	}
+	public int getCc() 
+	{
+		return cc;
+	}
+	static
+	{
+		System.out.println("inside Static Initialser of C");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
